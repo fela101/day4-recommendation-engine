@@ -1,0 +1,21 @@
+[project]
+name = "day4-recommendation-engine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fela101", email = "ngangafelix25@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyterlab>=4.6.5",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+]
+
+[project.scripts]
+day4-recommendation-engine = "day4_recommendation_engine:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
