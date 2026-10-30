@@ -9,7 +9,9 @@ A Python-based collaborative filtering recommendation engine that processes cust
 The recommendation engine uses a **neighborhood-based collaborative filtering** approach:
 1. **Customer History Modeling**: Each customer is represented by a unique set of purchased product IDs.
 2. **Similarity Metric (Jaccard Index)**: Measures overlap between two customers' product histories:
-   $$J(A, B) = \frac{|A \cap B|}{|A \cup B|}$$
+
+$$J(A, B) = \frac{|A \cap B|}{|A \cup B|}$$
+
 3. **Candidate Generation**: For a target customer, the engine finds the top-$k$ most similar customers (neighbors) and collects products bought by those neighbors that the target customer has not yet purchased.
 4. **Weighted Scoring Formula**: Candidates are scored and ranked using a multi-component heuristic combining neighbor similarity, support count, and global product popularity.
 
